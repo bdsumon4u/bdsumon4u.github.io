@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Rajdhani:wght@500;600&display=swap");
+* {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: radial-gradient(#dedede 15%, transparent 16%), linear-gradient(45deg, transparent 49%, #dedede 49% 51%, transparent 51%), linear-gradient(-45deg, transparent 49%, #dedede 49% 51%, transparent 51%);
+  background-size: 1em 1em;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+body > main {
+  max-width: 48rem;
+  margin: 1.5rem auto;
+  padding: 2rem;
+  border: 0.25rem solid gray;
+  border-radius: 0.5rem;
+  background: radial-gradient(circle at top, transparent 9%, #dedede 10%, #dedede 15%, transparent 16%), radial-gradient(circle at bottom, transparent 9%, #dedede 10%, #dedede 15%, transparent 16%), radial-gradient(circle at right, transparent 9%, #dedede 10%, #dedede 15%, transparent 16%), radial-gradient(circle at left, transparent 9%, #dedede 10%, #dedede 15%, transparent 16%);
+  background-size: 1em 1em;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+#page-header {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: solid 5px gray;
+  align-items: baseline;
+}
+#page-header #name {
+  font-family: monospace;
+}
+#page-header #designation {
+  font-family: monospace;
+}
+#page-header div:first-child {
+  align-self: flex-end;
+}
+#page-header div:first-child h1,
+#page-header div:first-child h2,
+#page-header div:first-child h3 {
+  margin: 0.25rem;
+}
+#page-header div:first-child h1 {
+  font-size: 2rem;
+}
+#page-header div:first-child h2 {
+  font-size: 1rem;
+}
+#page-header div:first-child h3 {
+  font-size: 0.75rem;
+}
+
+.profile-pic-wrapper .box {
+  height: 10rem;
+  width: 10rem;
+  border: 2px solid gray;
+  border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  padding-right: 0.125rem;
+  padding-bottom: 0.125rem;
+  transition: all 50ms;
+}
+.profile-pic-wrapper .box img {
+  height: 100%;
+  width: 100%;
+  border-right: 2px solid gray;
+  border-bottom: 2px solid gray;
+}
+.profile-pic-wrapper .box:hover {
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-top: 0.125rem;
+  padding-left: 0.125rem;
+}
+.profile-pic-wrapper .box:hover img {
+  border-right: 0;
+  border-bottom: 0;
+  border-top: 2px solid gray;
+  border-left: 2px solid gray;
+}
+
+#contact {
+  margin-top: 1rem;
+}
+#contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#contact ul li:not(:last-child) {
+  padding-bottom: 0.125rem;
+}
+#contact ul a {
+  color: #454545;
+  font-size: 12px;
+  text-decoration: none;
+}
+#contact ul a span {
+  font-weight: bold;
+}
+#contact ul a span.away {
+  border: 1px solid;
+  padding: 1px;
+  font-size: 8px;
+}
+#contact ul a:hover {
+  color: #000000;
+}
+#contact ul a:hover .away {
+  background-color: #000000;
+  color: white;
+}
+
+section header h3 {
+  margin: 0.5rem 0;
+}
+section header h3 + p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+section > div ul.badge-list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+section > div ul.badge-list li {
+  padding: 0.125rem 0.25rem;
+  background-color: #404040;
+  color: #dedede;
+  border-radius: 0.125rem;
+  font-size: 10px;
+  cursor: pointer;
+}
+section > div ul.badge-list li:hover {
+  background-color: #000000;
+}
+section > div > h2 {
+  margin: 0.75rem 0;
+  font-variant: small-caps;
+  color: crimson;
+  font-size: 1.25rem;
+}
+section > div > h2::first-letter {
+  color: white;
+  background-color: red;
+  padding: 1px 2px;
+  margin-right: 2px;
+  border: 3px double white;
+  border-radius: 3px;
+}
+section > div:hover > h2::first-letter {
+  color: black;
+}
+
+.main-row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.left-col {
+  padding-right: 1rem;
+}
+
+.right-col {
+  padding-left: 1rem;
+}
+
+.summary {
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.exp-list {
+  margin: 0;
+  padding-left: 20px;
+}
+.exp-list li {
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
+
+.job-item header h3,
+.school header h3 {
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.job-item header p,
+.school header p {
+  margin-bottom: 0.25rem;
+  font-size: 12px;
+  color: #787878;
+  font-family: "Lobster", cursive, monospace, sans-serif;
+}
+
+.school:not(:last-child) {
+  border-bottom: 2px solid gray;
+}
+.school > p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Rajdhani", cursive, monospace, sans-serif;
+}
+
+.project:not(:last-child) {
+  border-bottom: 2px solid gray;
+}
+.project header h3 {
+  margin-bottom: 0;
+}
+.project header h3 a {
+  font-family: monospace;
+  text-decoration: none;
+  color: #404040;
+}
+.project header h3 a span {
+  font-size: 18px;
+}
+.project header h3 a:hover {
+  color: #000000;
+}
+.project header p {
+  margin-bottom: 0.25rem;
+  font-size: 12px;
+  font-family: "Rajdhani";
+}/*# sourceMappingURL=main.css.map */
